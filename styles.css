@@ -1,7 +1,47 @@
 .site-header {
+         
+}
+
+.site-header {
+  display: flex;                 /* Flex layout for horizontal alignment */
+  justify-content: space-between; /* Push left and right blocks to edges */
+  align-items: center;            /* Vertically center items */
   background-color: #00183f; 
   color: #d8cd64;             
-  padding: 50px;          
+  padding: 50px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header-left {
+  text-align: right;     
+  max-width: 50%;     
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-left h1 {
+  font-size: 48px;
+  font-weight: 700;   
+  margin: 0;
+}
+
+.header-left p {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 5px 0 0 0;
+}
+
+.header-right {
+  text-align: center;    
+  max-width: 40%;    
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-right p {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
 }
 
 body {
