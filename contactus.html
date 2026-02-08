@@ -1,6 +1,79 @@
 <html>
 <head>
   <title>NFS Insights Advisory</title>
+  <style>
+    .blurbbox {
+        flex: 1;               
+	    padding: 10px;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 50px;
+
+	    justify-content: start;
+	    max-width: 60%;
+	    max-height: 40%;
+	    background: linear-gradient(to bottom, #00183f 30%, #9babb1 30%);
+	    border-radius: 12px;
+	    overflow: hidden;
+    }
+
+    .blurbbox h2 {
+	    padding-bottom: 20px;
+      color: #ffffff;
+    }
+    
+    .blurbbox p {
+      color: #004e7a;
+			font-size: small;
+			margin-top: 20px;
+    }
+
+    .formbox {
+        flex: 1;               
+	    padding: 10px;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 50px;
+
+	    justify-content: start;
+	    max-width: 40%;
+	    max-height: 45%;
+	    background: #9babb1;
+	    border-radius: 12px;
+	    overflow: hidden;
+    }
+    
+    .formbox p {
+        gap: 20px;
+        color: #004e7a;
+    }
+
+    form label {
+        color: #004e7a;
+    }
+
+    table {
+        border-collapse: collapse;      
+        width: 80%;
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-top: 50px;
+        border: 3px solid #000;       
+    }
+
+		th {
+  		padding: 12px 16px;      
+  		border: 1px solid #000;    
+  		text-align: center;
+  		vertical-align: middle;
+		}
+  </style>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -27,5 +100,97 @@
       	    <a href="contactus.html">Contact</a>
         </nav>
 	</header>
+    <div class="blurbbox"> 
+        <p>
+            We would be absolutely delighted to connect with you! 
+            At NFS Insights Advisory, building strong relationships is at the heart of what we do. 
+            Whether you have questions, need guidance, or are ready to explore how we can support your organization, we’re eager to hear from you. 
+            Don’t hesitate—reach out today, and let’s start the conversation!
+        </p>
+    </div>
+    <table>
+        <tr>
+            <th>
+                <h2>Platform</h2>
+            </th>
+            <th>
+                <h2>Address</h2>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <p>Email</p>
+            </th>
+            <th>
+                <a href="#">Nancyfredasmith@gmail.com</a>
+            </th>
+        </tr>
+		<tr>
+            <th>
+                <p>
+					Phone
+				</p>
+            </th>
+            <th>
+                <p>
+					<a href="#">+1(845) 598-2807</a>
+				</p>
+            </th>
+        </tr>
+		<tr>
+            <th>
+                <p>
+					LinkedIn
+				</p>
+            </th>
+            <th>
+                <a href="#">
+					https://www.linkedin.com/in/nancy-freda-smith-cpa-cfe-a097827/
+				</a>
+            </th>
+        </tr>
+    </table>
+
+    <div class="formbox">
+        <p>If you would like, leave your contact information and desired service below!</p>
+        <form action="#" method="GET">
+		    <label for="fname">Client name:</label><br>
+  		    <input type="text" id="fname" name="fname"><br>
+		    <label for="fname">Email Address:</label><br>
+  		    <input type="text" id="user_input" name="user_input" placeholder="Type here"><br>
+            <label for="fname">Phone Number:</label><br>
+  		    <input type="text" id="user_input" name="user_input" placeholder="Type here"><br>
+            <label for="fname">Service:</label><br>
+  		    <label>
+                <input type="radio" name="plan" value="basic">
+                    Internal Audit Optimization
+            </label><br>
+            <label>
+                <input type="radio" name="plan" value="standard">
+                    Financial Investigation
+            </label><br>
+            <label>
+                <input type="radio" name="plan" value="premium">
+                    Enterprise Risk Management
+            </label><br>
+            <label>
+                <input type="radio" name="plan" value="premium">
+                    Asset Protection Strategy
+            </label><br>
+            <label>
+                <input type="radio" name="plan" value="premium">
+                    Compliance Advisory
+            </label><br>
+            <label>
+                <input type="radio" name="plan" value="premium">
+                    Crisis Management
+            </label><br>
+            <label>
+                <input type="radio" name="plan" value="premium">
+                    Talent Strategy
+            </label><br>
+  		    <input type="submit" value="Send">
+	    </form>
+    </div>
 </body>
 </html>
