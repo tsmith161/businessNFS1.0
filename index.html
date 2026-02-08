@@ -5,6 +5,8 @@
 	<meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
 
 	<style>
+		/* Middle text and image (text picture text) */
+
 		.tpt {
 			margin-right: 15%;
 			margin-left: 15%;
@@ -39,6 +41,8 @@
   		height: auto;
 		}
 
+		/* Box rows */
+
 		.two-box-row {
   		gap: 40px;
   		width: 100vw;
@@ -55,7 +59,6 @@
 		.box {
 		  flex: 1;               
 		  padding: 10px;
-		  border-radius: 12px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -73,13 +76,13 @@
 			padding-bottom: 20px;
 		}
 
+		/* Box CSS for Founder Picture */
+
 		.imagebox {
   		flex-direction: column;
   		justify-content: center;    
   		overflow: hidden; 
 			border-radius: 10px;
-
-			width: calc(100%-60px);	
   		height: auto;
   		display: block;
 
@@ -91,12 +94,10 @@
 			height: 180px;
 		}
 
-		.textbox {
-
-		}
 	</style>
 </head>
 <body>
+	<!-- This is the navigation and header bar -->
 	<header class="navbar">
 
   	<div class="brand">
@@ -121,24 +122,39 @@
     </nav>
 	</header>
 
+	<!-- This is the text between the boxes and header -->
 	<div class="tpt">
 		<div class="texttpt">Preventing Fraud.<br>Promoting Integrity.<br>Purposeful Audits.</div>
 		<img src="risk_icon.png" alt="Risk Icon" width = "100" height = "100">
 		<div class="texttpt">Annual Global Fraud exceeds $5.13 T!<br><br>What will you do?</div>
 	</div>
 
+	<!-- This is the 1st row including the services box and founder box -->
 	<div class="two-box-row">
 		<div class = "box">
 			<h2><a style="color:#ffffff; text-decoration: none;" href="services.html">Our Services</a></h2>
-			<div class="textbox">
-				<ul style="list-style-type:none; color:#004e7a; line-height:1.5;">
-					<li style="font-size: 22">Enterprise Risk Frameworks</li>
-					<li style="font-size: 22">Fraud Consulting</li>
-					<li style="font-size: 22">Risk training and awareness</li>
-					<li style="font-size: 22">Internal audit</li>
-					<li style="font-size: 22">Asset protection Strategies</li>
-				</ul>
+			<ul style="list-style-type:none; color:#004e7a; line-height:1.5;">
+				<li style="font-size: clamp(1.1rem, 3vw, 1.5rem)">Enterprise Risk Frameworks</li>
+				<li style="font-size: clamp(1.1rem, 3vw, 1.5rem)">Fraud Consulting</li>
+				<li style="font-size: clamp(1.1rem, 3vw, 1.5rem)">Risk training and awareness</li>
+				<li style="font-size: clamp(1.1rem, 3vw, 1.5rem)">Internal audit</li>
+				<li style="font-size: clamp(1.1rem, 3vw, 1.5rem)">Asset protection Strategies</li>
+			</ul>
+		</div>
+		<div class = "box">
+			<h2 style="color:#ffffff">Founder</h2>
+			<div class ="imagebox" style="align-items: center;">	
+				<img src="nfs.jpeg" alt="NFS">
 			</div>
+		</div>
+	</div>
+
+	<!-- Lower two boxes -->
+	<div class="two-box-row">
+		<div class = "box">
+			<h2><a style="color:#ffffff; text-decoration: none;" href="contactus.html">Get in touch!</a></h2>
+			<p style="color:#004e7a; text-decoration: none; font-size: large;">Call Today and get a free quote!</p>
+			<a style="color:#004e7a; text-decoration: none; font-size: large" href="https://www.linkedin.com/in/nancy-freda-smith-cpa-cfe-a097827/">Follow Our LinkedIn</a>
 		</div>
 		<div class = "box">
 			<h2 style="color:#ffffff">Founder</h2>
