@@ -21,6 +21,24 @@
 	    overflow: hidden;
     }
 
+		.tablebox {
+      flex: 1;               
+	    padding: 10px;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 50px;
+			margin-bottom: 50px;
+
+	    justify-content: start;
+	    background: linear-gradient(to bottom, #00183f 30px, #9babb1 30px);
+	    border-radius: 12px;
+	    overflow: hidden;
+    }
+
     .blurbbox h2 {
 	    padding-bottom: 20px;
       color: #ffffff;
@@ -82,7 +100,8 @@
             Below, you’ll find a comprehensive list of our services along with detailed descriptions to help you understand how NFS Insights Advisory can support your goals with clarity, confidence, and actionable solutions.
         </p>
     </div>
-    <table>
+		 <div class="tablebox"> 
+    	<table>
             <tr>
                 <th>
                     <h2>Service Offerings</h2>
@@ -170,6 +189,7 @@
                 </th>
             </tr>
         </table>
+			</div>
 	<footer>
 		<div class="foot">
 			<p>NFSInsights</p>
