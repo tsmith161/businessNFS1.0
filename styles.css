@@ -47,6 +47,10 @@
   align-items: center;
   padding: 20px 60px;
   background-color: #0f172a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 nav a {
@@ -64,6 +68,7 @@ body {
   background-color: #E3DFD6; /* Light Orange background */
   margin: 0px;
   padding: 0px;
+  padding-top: 60px;
 }
 
 a.heading {
@@ -101,4 +106,19 @@ a.text:hover {
 
 .box h2 {
 	padding-bottom: 20px;
+}
+
+.foot {      
+	padding: 10px;
+  box-sizing: border-box;
+	background: #0f172a;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.foot p {
+  color:#E3DFD6;
+  text-align: center;
 }
